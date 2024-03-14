@@ -1,4 +1,4 @@
-package s10m2023y
+package package202310
 
 import "math"
 
@@ -40,7 +40,7 @@ Constraints:
 */
 
 func PoorPigs(buckets int, minutesToDie int, minutesToTest int) int {
-	rounds := int(minutesToTest / minutesToDie) + 1
+	rounds := int(minutesToTest/minutesToDie) + 1
 	pigCount := math.Log2(float64(buckets)) / math.Log2(float64(rounds))
 	return int(math.Ceil(pigCount))
 }

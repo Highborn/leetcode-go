@@ -1,4 +1,4 @@
-package s11m2023y
+package package202311
 
 func computeMode(maxM, curM *[]int, val int) {
 	if val == (*curM)[1] {
